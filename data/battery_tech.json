@@ -1,0 +1,22 @@
+{
+  "lithium": {
+    "name": "Lithium-ion",
+    "dod": 0.85,
+    "efficiency": 0.95,
+    "lifetime_cycles": 6000,
+    "cost_per_kwh": 400,
+    "maintenance_cost_per_year": 20,
+    "replacement_years": 10,
+    "environmental_impact": "medium"
+  },
+  "lead_acid": {
+    "name": "Plomb-acide",
+    "dod": 0.5,
+    "efficiency": 0.85,
+    "lifetime_cycles": 1500,
+    "cost_per_kwh": 200,
+    "maintenance_cost_per_year": 50,
+    "replacement_years": 5,
+    "environmental_impact": "high"
+  }
+}

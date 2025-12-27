@@ -1,0 +1,19 @@
+
+### **data/cities_irradiation.csv**
+```csv
+city,irradiation_kwh_m2,latitude,longitude,region
+Paris,1150,48.8566,2.3522,Île-de-France
+Lyon,1250,45.7640,4.8357,Auvergne-Rhône-Alpes
+Marseille,1550,43.2965,5.3698,Provence-Alpes-Côte d'Azur
+Toulouse,1400,43.6047,1.4442,Occitanie
+Bordeaux,1300,44.8378,-0.5792,Nouvelle-Aquitaine
+Lille,1100,50.6292,3.0573,Hauts-de-France
+Strasbourg,1200,48.5734,7.7521,Grand Est
+Nantes,1350,47.2184,-1.5536,Pays de la Loire
+Montpellier,1500,43.6108,3.8767,Occitanie
+Nice,1600,43.7102,7.2620,Provence-Alpes-Côte d'Azur
+Rennes,1250,48.1173,-1.6778,Bretagne
+Clermont-Ferrand,1280,45.7772,3.0870,Auvergne-Rhône-Alpes
+Grenoble,1320,45.1885,5.7245,Auvergne-Rhône-Alpes
+Dijon,1220,47.3220,5.0415,Bourgogne-Franche-Comté
+Toulon,1580,43.1242,5.9280,Provence-Alpes-Côte d'Azur

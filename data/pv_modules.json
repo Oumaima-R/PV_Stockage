@@ -1,0 +1,24 @@
+{
+  "monocrystalline": {
+    "name": "Monocristallin",
+    "efficiency_min": 0.18,
+    "efficiency_max": 0.22,
+    "efficiency_typical": 0.20,
+    "power_per_module_kw": 0.4,
+    "area_per_module_m2": 1.8,
+    "cost_per_kwp_eur": 800,
+    "lifetime_years": 25,
+    "degradation_rate_per_year": 0.005
+  },
+  "polycrystalline": {
+    "name": "Polycristallin",
+    "efficiency_min": 0.15,
+    "efficiency_max": 0.18,
+    "efficiency_typical": 0.16,
+    "power_per_module_kw": 0.35,
+    "area_per_module_m2": 1.9,
+    "cost_per_kwp_eur": 600,
+    "lifetime_years": 25,
+    "degradation_rate_per_year": 0.005
+  }
+}

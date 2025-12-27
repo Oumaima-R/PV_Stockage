@@ -1,0 +1,356 @@
+/* style_maroc.css */
+/* Styles personnalisés pour l'application version Maroc */
+
+:root {
+    /* Couleurs inspirées du Maroc */
+    --primary-red: #C1272D;
+    --primary-green: #006233;
+    --gold-accent: #F7DC6F;
+    --earth-brown: #5D4037;
+    --palm-green: #27AE60;
+    --sunset-orange: #E67E22;
+    --clay-red: #C0392B;
+    --sand-yellow: #FEF9E7;
+    --night-blue: #2C3E50;
+    --white-off: #FFFFFF;
+    
+    /* Dégradés marocains */
+    --gradient-morocco: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-green) 100%);
+    --gradient-desert: linear-gradient(135deg, var(--gold-accent) 0%, var(--sunset-orange) 100%);
+    --gradient-oasis: linear-gradient(135deg, var(--palm-green) 0%, #2ECC71 100%);
+    
+    /* Ombres et bordures */
+    --shadow-light: 0 2px 8px rgba(193, 39, 45, 0.1);
+    --shadow-medium: 0 4px 12px rgba(0, 98, 51, 0.15);
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+}
+
+/* Styles généraux */
+.stApp {
+    background: var(--sand-yellow);
+    font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    color: var(--night-blue);
+}
+
+/* Header marocain */
+.morocco-header {
+    background: var(--gradient-morocco);
+    padding: 2rem;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2rem;
+    box-shadow: var(--shadow-medium);
+    position: relative;
+    overflow: hidden;
+}
+
+.morocco-header::before {
+    content: "☀️";
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    opacity: 0.3;
+}
+
+.morocco-header h1 {
+    color: white;
+    margin: 0;
+    font-size: 2.2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.morocco-header p {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+}
+
+/* Cartes avec thème marocain */
+.morocco-card {
+    background: var(--white-off);
+    border-radius: var(--border-radius-lg);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: 2px solid transparent;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.morocco-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-medium);
+    border-color: var(--gold-accent);
+}
+
+.morocco-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-morocco);
+    border-radius: 0 0 var(--border-radius-lg) var(--border-radius-lg);
+}
+
+/* Indicateurs KPI */
+.kpi-morocco {
+    text-align: center;
+    padding: 1.5rem;
+    background: white;
+    border-radius: var(--border-radius);
+    border-top: 5px solid var(--primary-green);
+    box-shadow: var(--shadow-light);
+    transition: transform 0.3s ease;
+}
+
+.kpi-morocco:hover {
+    transform: scale(1.03);
+}
+
+.kpi-morocco .value {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-red);
+    margin: 0.5rem 0;
+    font-family: 'Consolas', monospace;
+}
+
+.kpi-morocco .label {
+    font-size: 0.9rem;
+    color: var(--earth-brown);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.kpi-morocco .unit {
+    color: var(--night-blue);
+    font-size: 0.8rem;
+    opacity: 0.7;
+}
+
+/* Badges scénarios version Maroc */
+.scenario-badge-morocco {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-right: 0.75rem;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.scenario-badge-morocco:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.scenario-badge-morocco.s0 { background: linear-gradient(135deg, #95A5A6, #7F8C8D); color: white; }
+.scenario-badge-morocco.s1 { background: linear-gradient(135deg, #F39C12, #E67E22); color: white; }
+.scenario-badge-morocco.s2 { background: linear-gradient(135deg, #3498DB, #2980B9); color: white; }
+.scenario-badge-morocco.s3 { background: linear-gradient(135deg, #2ECC71, #27AE60); color: white; }
+.scenario-badge-morocco.s4 { background: linear-gradient(135deg, #9B59B6, #8E44AD); color: white; }
+
+/* Boutons marocains */
+.stButton > button.morocco-btn {
+    background: var(--gradient-morocco);
+    color: white;
+    border: none;
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(193, 39, 45, 0.2);
+}
+
+.stButton > button.morocco-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(193, 39, 45, 0.3);
+    color: white;
+}
+
+.stButton > button.morocco-btn-secondary {
+    background: white;
+    color: var(--primary-red);
+    border: 2px solid var(--primary-red);
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.stButton > button.morocco-btn-secondary:hover {
+    background: var(--primary-red);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Curseurs avec style marocain */
+.stSlider > div > div > div {
+    background: var(--gradient-desert) !important;
+}
+
+/* Sidebar version Maroc */
+.css-1d391kg {
+    background: linear-gradient(180deg, white 0%, #F8F9FA 100%);
+    border-right: 3px solid var(--primary-green);
+}
+
+.css-1d391kg .st-emotion-cache-16txtl3 {
+    border-bottom: 2px solid var(--gold-accent);
+}
+
+/* Tableaux */
+.dataframe {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    background: white;
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow-light);
+}
+
+.dataframe th {
+    background: var(--gradient-morocco);
+    color: white;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: left;
+}
+
+.dataframe td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #E8E8E8;
+    transition: background-color 0.2s ease;
+}
+
+.dataframe tr:hover td {
+    background-color: rgba(247, 220, 111, 0.1);
+}
+
+/* Graphiques */
+.js-plotly-plot {
+    border-radius: var(--border-radius-lg);
+    background: white;
+    padding: 1rem;
+    box-shadow: var(--shadow-light);
+    border: 1px solid rgba(193, 39, 45, 0.1);
+}
+
+/* Onglets */
+.stTabs [data-baseweb="tab-list"] {
+    gap: 2px;
+    background-color: #F0F0F0;
+    padding: 4px;
+    border-radius: var(--border-radius);
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: var(--border-radius);
+    padding: 0.75rem 1.5rem;
+    font-weight: 600;
+}
+
+.stTabs [aria-selected="true"] {
+    background: var(--gradient-morocco) !important;
+    color: white !important;
+}
+
+/* Messages d'information */
+.info-box-morocco {
+    background: linear-gradient(135deg, #E8F5E9, #C8E6C9);
+    border-left: 5px solid var(--primary-green);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.warning-box-morocco {
+    background: linear-gradient(135deg, #FFF3E0, #FFE0B2);
+    border-left: 5px solid var(--sunset-orange);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+.error-box-morocco {
+    background: linear-gradient(135deg, #FFEBEE, #FFCDD2);
+    border-left: 5px solid var(--clay-red);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+}
+
+/* Éléments décoratifs marocains */
+.morocco-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23f7dc6f' fill-opacity='0.1' fill-rule='evenodd'/%3E%3C/svg%3E");
+    opacity: 0.05;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+}
+
+/* Animations spécifiques */
+@keyframes moroccoPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.pulse-animation {
+    animation: moroccoPulse 2s infinite;
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(30px); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-right {
+    animation: slideInRight 0.5s ease-out;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .morocco-header {
+        padding: 1.5rem;
+        border-radius: 0 0 15px 15px;
+    }
+    
+    .morocco-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .kpi-morocco .value {
+        font-size: 2rem;
+    }
+    
+    .scenario-badge-morocco {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Impression */
+@media print {
+    .morocco-header {
+        background: #C1272D !important;
+        -webkit-print-color-adjust: exact;
+    }
+    
+    .morocco-card {
+        break-inside: avoid;
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+}
